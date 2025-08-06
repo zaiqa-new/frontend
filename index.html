@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Delish – Restaurant & Cafe Bootstrap HTML5 Template</title>
+    <title>Zaiqa – Authentic Indian Restaurant Portland, Oergon</title>
     <meta
       name="description"
       content="Delish – Restaurant & Cafe Bootstrap HTML5 Template"
@@ -347,22 +347,59 @@
     margin-right: 60px;
   }
 </style>
-
-<div class="top-banner d-none d-xl-block">
-  <div class="container">
-    <!-- <div class="tagline">
-      “At Zaiqa, every bite tells a story—of tradition, taste, and togetherness.”
-    </div> -->
-    <div class="scrolling-text">
-      <span> “At Zaiqa, every bite tells a story—of tradition, taste, and togetherness.”</span>
-      <span>📍 Our Locations</span>
-      <span>📍 Lake Oswego: — Open Sun–Mon: 11 AM–9 PM</span>
-      <span>📍 Wilsonville Restaurant — Open Sun–Mon: 11 AM–9 PM</span>
-      <span>📍 South Waterfront — Open Sun–Mon: 11 AM–9 PM</span>
-      <span>📍 Ridgefield, WA — Comming Soon</span>
+<!-- Top Banner Always Visible (Inline CSS) -->
+<div class="top-banner" style="display: block !important; visibility: visible !important; background-color: black; padding: 10px 0; overflow: hidden; white-space: nowrap; width: 100%; position: relative; z-index: 999;">
+  <div style="max-width: 100%; overflow: hidden;">
+    <div class="scrolling-text" style="display: inline-block; white-space: nowrap; animation: scroll-left 25s linear infinite;">
+      <span style="display: inline-block; margin-right: 40px; font-weight: 500; color: #fff; font-size: 15px;">
+        “At Zaiqa, every bite tells a story—of tradition, taste, and togetherness.”
+      </span>
+      <span style="display: inline-block; margin-right: 40px; font-weight: 500; color: #fff; font-size: 15px;">
+        📍 Our Locations
+      </span>
+      <span style="display: inline-block; margin-right: 40px; font-weight: 500; color: #fff; font-size: 15px;">
+        📍 Lake Oswego — Open Sun–Mon: 11 AM–9 PM
+      </span>
+      <span style="display: inline-block; margin-right: 40px; font-weight: 500; color: #fff; font-size: 15px;">
+        📍 Wilsonville — Open Sun–Mon: 11 AM–9 PM
+      </span>
+      <span style="display: inline-block; margin-right: 40px; font-weight: 500; color: #fff; font-size: 15px;">
+        📍 South Waterfront — Open Sun–Mon: 11 AM–9 PM
+      </span>
+      <span style="display: inline-block; margin-right: 40px; font-weight: 500; color: #fff; font-size: 15px;">
+        📍 Ridgefield, WA — Coming Soon
+      </span>
     </div>
   </div>
 </div>
+
+<!-- You MUST include this style block for the scroll animation -->
+<style>
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scrolling-text {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  @media (max-width: 576px) {
+    .scrolling-text {
+      animation-duration: 20s !important; /* Faster scroll on mobile */
+    }
+    .scrolling-text span {
+      font-size: 13px !important;
+      margin-right: 25px !important;
+    }
+  }
+</style>
+
+
 
 
     <!-- Main Header -->
@@ -389,7 +426,7 @@
                   <li><a href="#locations">Locations</a></li>
                   <li><a href="#food-menu">Food Menu</a></li>
                   <li><a href="#testimonials">Testimonials</a></li>
-                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#blog">Gift Cards</a></li>
                 </ul>
               </nav>
             </div>
@@ -466,7 +503,7 @@
                     <span class="hover-rl"></span>
                     <span class="fake_hover"></span>
                     <span class="btn-wrap">
-                      <span class="text-one">View Menu</span>
+                      <span class="text-one">View Food Menu</span>
                       <span class="text-two">View Food Menu</span>
                     </span>
                   </a>
@@ -977,12 +1014,19 @@
           <p><strong>Hours:</strong><br />Mon–Sun: 11:00 AM–9:00 PM</p>
         </div>
         <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px">
-          <button style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
-            Order Online from Portland
-          </button>
-          <button style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
-            Table Reservation at Portland
-          </button>
+          <a
+  href="https://order.toasttab.com/online/zaiqa-lake-oswego"
+  target="_blank"
+  style="display: inline-block; text-align: center; text-decoration: none; background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
+  Order Online from Portland
+</a>
+
+         <button
+  onclick="openReservationModal('lake-oswego')"
+  style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
+  Table Reservation at Portland
+</button>
+
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.9838107477096!2d-122.7442929!3d45.4163295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495731325691c1d%3A0x8d452feced3c8bc1!2sZaiqa%20Indian%20Cuisine%20-%20Lake%20Oswego!5e0!3m2!1sen!2sin!4v1692030300000!5m2!1sen!2sin"
@@ -1013,12 +1057,19 @@
           <p><strong>Hours:</strong><br />Mon–Sun: 11:00 AM–9:00 PM</p>
         </div>
         <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px">
-          <button style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
-            Order Online from Wilsonville
-          </button>
-          <button style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
-            Table Reservation at Wilsonville
-          </button>
+          <a
+  href="https://order.toasttab.com/online/zaiqa-wilsonville"
+  target="_blank"
+  style="display: inline-block; text-align: center; text-decoration: none; background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
+  Order Online from Wilsonville
+</a>
+
+          <button
+  onclick="openReservationModal('wilsonville')"
+  style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
+  Table Reservation at Wilsonville
+</button>
+
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.164303156784!2d-122.7655082!3d45.3100156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54956fba7c57eff1%3A0x65d1172f69a01af8!2sZaiqa%20Indian%20Cuisine%20-%20Wilsonville!5e0!3m2!1sen!2sin!4v1724927310873!5m2!1sen!2sin"
@@ -1049,12 +1100,19 @@
           <p><strong>Hours:</strong><br />Mon–Sun: 11:00 AM–9:00 PM</p>
         </div>
         <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px">
-          <button style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
-            Order Online from South Waterfront
-          </button>
-          <button style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
-            Table Reservation at South Waterfront
-          </button>
+          <a
+  href="https://order.toasttab.com/online/zaiqapdx"
+  target="_blank"
+  style="display: inline-block; text-align: center; text-decoration: none; background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
+  Order Online from South Waterfront
+</a>
+
+          <button
+  onclick="openReservationModal('south-waterfront')"
+  style="background-color: var(--rr-theme-primary); border: 2px solid var(--rr-theme-primary); border-radius: 3px; color: black; width: 100%; font-size: 15px; font-weight: bold; padding: 10px;">
+  Table Reservation at south Waterfront
+</button>
+
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.084883895249!2d-122.6732168!3d45.496552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950bf5f0817967%3A0xa81a8bd01b3572c8!2sZaiqa%20Indian%20Cuisine%20-%20South%20Waterfront!5e0!3m2!1sen!2sin!4v1724931102354!5m2!1sen!2sin"
@@ -1950,7 +2008,7 @@
                     Your New Favorite Spot for Authentic <span style="color: #f8bf2c;">Indian-Pakistani</span> Flavors
                   </h2>
                   <p class="mb-0">
-                    At Delish, we bring you the true taste of India and
+                    At Z, we bring you the true taste of India and
                     Pakistan, blending authentic flavors with modern service and
                     a welcoming ambiance. Every detail — from our kitchen to
                     your table — is designed to deliver warmth, flavor, and
@@ -2241,7 +2299,7 @@
               <h6 class="mb-10">Portland Restaurant</h6>
               <p>Delight your loved ones with a flavorful journey through our Wilsonville location.</p>
             </div>
-            <a href="#" class="btn  mt-3 px-5 py-3 fs-5" style="background-color: gold;font-weight: bold;">Buy Gift Card</a>
+            <a href="https://www.toasttab.com/zaiqa-lake-oswego/giftcards" class="btn  mt-3 px-5 py-3 fs-5" style="background-color: gold;font-weight: bold;">Buy Gift Card</a>
           </div>
         </div>
       </div>
@@ -2258,10 +2316,10 @@
           </a>
           <div class="blog-3__item__content text-center flex-grow-1 d-flex flex-column justify-content-between">
             <div>
-              <h6 class="mb-10">Beaverton Restaurant</h6>
+              <h6 class="mb-10">Wilsonville Restaurant</h6>
               <p>Celebrate with elegance. Treat friends and family to an unforgettable dining experience.</p>
             </div>
-            <a href="#" class="btn  mt-3 px-5 py-3 fs-5" style="background-color: gold;font-weight: bold;">Buy Gift Card</a>
+            <a href="https://www.toasttab.com/zaiqa-wilsonville/giftcards" class="btn  mt-3 px-5 py-3 fs-5" style="background-color: gold;font-weight: bold;">Buy Gift Card</a>
           </div>
         </div>
       </div>
@@ -2278,10 +2336,10 @@
           </a>
           <div class="blog-3__item__content text-center flex-grow-1 d-flex flex-column justify-content-between">
             <div>
-              <h6 class="mb-10">Hillsboro Restaurant</h6>
-              <p>Perfect for any occasion. Surprise someone with the taste of Zaiqa in Hillsboro.</p>
+              <h6 class="mb-10">South Waterfront</h6>
+              <p>Perfect for any occasion. Surprise someone with the taste of Zaiqa in South Waterfront.</p>
             </div>
-            <a href="#" class="btn  mt-3 px-5 py-3 fs-5" style="background-color: gold;font-weight: bold;">Buy Gift Card</a>
+            <a href="https://www.toasttab.com/zaiqapdx/giftcards" class="btn  mt-3 px-5 py-3 fs-5" style="background-color: gold;font-weight: bold;">Buy Gift Card</a>
           </div>
         </div>
       </div>
@@ -2501,7 +2559,7 @@ Goat Biryani</a
                   <div class="footer-2__copyright text-lg-start text-center">
                     <p class="mb-0">
                       All rights received 2024.
-                      <a href="index.html">Delish</a> Restaurant
+                      <a href="index.html">Zaiqa</a> Restaurant
                     </p>
                   </div>
                 </div>
@@ -2712,7 +2770,7 @@ Goat Biryani</a
         </p>
         <a href="#" style="font-weight: bold;">Mon–Sun: 11:00 AM–9:00 PM</a>
         <a href="https://zaiqapdx.com/order/zaiqa-lake-oswego" class="btn-red" style="background-color: #f48905;">Order Online</a>
-        <a href="#" class="btn-red" style="background-color: #f48905;">Table Reservation</a>
+        <a href="#" class="btn-red" style="background-color: #f48905;" onclick="openReservationModal('lake-oswego')">Table Reservation</a>
         <a href="https://www.toasttab.com/zaiqa-lake-oswego/giftcards" class="btn-red" style="background-color: #f48905;">Gift Cards</a>
       </div>
 
@@ -2726,7 +2784,7 @@ Goat Biryani</a
         </p>
         <a href="#" style="font-weight: bold;">Mon–Sun: 11:00 AM–9:00 PM</a>
         <a href="https://zaiqapdx.com/order/zaiqa-wilsonville" class="btn-red" style="background-color: #f48905;">Order Online</a>
-        <a href="#" class="btn-red" style="background-color: #f48905;">Table Reservation</a>
+        <a href="#" class="btn-red" style="background-color: #f48905;" onclick="openReservationModal('wilsonville')">Table Reservation</a>
         <a href="https://www.toasttab.com/zaiqa-wilsonville/giftcards" class="btn-red" style="background-color: #f48905;">Gift Cards</a>
       </div>
 
@@ -2740,12 +2798,60 @@ Goat Biryani</a
         </p>
         <a href="#" style="font-weight: bold;">Mon–Sun: 11:00 AM–9:00 PM</a>
         <a href="https://zaiqapdx.com/order/zaiqapdx" class="btn-red" style="background-color: #f48905;">Order online</a>
-        <a href="https://eatapp.co/reserve/zaiqa-indian-cuisine-south-waterfront-3682-south-bond-avenue?source=iframe" class="btn-red" style="background-color: #f48905;">Table Reservation</a>
+        <a href="#" class="btn-red" style="background-color: #f48905;" onclick="openReservationModal('south-waterfront')">Table Reservation</a>
         <a href="https://www.toasttab.com/zaiqapdx/giftcards" class="btn-red" style="background-color: #f48905;">Gift Cards</a>
       </div>
     </div>
   </div>
 </div>
+<!-- table reservation plugin-->
+ <div id="reservationModal" class="modal-overlay" style="display: none;">
+  <div class="modal-content animated" style="max-width: 800px;">
+    <span class="close-btn" onclick="closeReservationModal()">&times;</span>
+    <div id="reservationIframeContainer" style="position: relative; padding-bottom: 150%; width: 100%; height: 0;">
+      <!-- Iframe will be injected here -->
+    </div>
+  </div>
+</div>
+<script>
+  const iframeSources = {
+    "lake-oswego": "https://eatapp.co/reserve/zaiqa-indian-cuisine-lake-oswego-15158-bangy-road?source=iframe",
+    "wilsonville": "https://eatapp.co/reserve/zaiqa-indian-cuisine-wilsonville-200-29030-southwest-town-center-loop-east?source=iframe",
+    "south-waterfront": "https://eatapp.co/reserve/zaiqa-indian-cuisine-south-waterfront-3682-south-bond-avenue?source=iframe"
+  };
+
+  function openReservationModal(locationKey) {
+    const src = iframeSources[locationKey];
+    const container = document.getElementById("reservationIframeContainer");
+
+    container.innerHTML = `
+      <iframe
+        title="Eat Widget"
+        frameborder="0"
+        src="${src}"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        allowfullscreen
+      ></iframe>
+    `;
+
+    document.getElementById("reservationModal").style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeReservationModal() {
+    document.getElementById("reservationModal").style.display = "none";
+    document.getElementById("reservationIframeContainer").innerHTML = '';
+    document.body.style.overflow = "";
+  }
+
+  // Optional: close modal on background click
+  window.onclick = function(event) {
+    const modal = document.getElementById("reservationModal");
+    if (event.target === modal) {
+      closeReservationModal();
+    }
+  };
+</script>
 
   </body>
 </html>
