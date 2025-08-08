@@ -36,13 +36,7 @@
   </head>
 
   <body class="body-1">
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+    
 
     <!-- preloader start -->
     <div id="preloader">
@@ -570,7 +564,7 @@
               <div class="service-2__item mb-24">
                 <div class="service-2__item-media">
                   <img
-                    src="./assets/imgs/service-2/service-1.png"
+                    src="./assets/imgs/service-2/s1.png"
                     class="img-fluid"
                     alt="Fresh Products"
                   />
@@ -590,7 +584,7 @@
               <div class="service-2__item mb-24">
                 <div class="service-2__item-media">
                   <img
-                    src="./assets/imgs/service-2/service-2.png"
+                    src="./assets/imgs/service-2/s3.png"
                     class="img-fluid"
                     alt="Skilled Chefs"
                   />
@@ -610,7 +604,7 @@
               <div class="service-2__item mb-24">
                 <div class="service-2__item-media">
                   <img
-                    src="./assets/imgs/service-2/service-3.png"
+                    src="./assets/imgs/service-2/s2.png"
                     class="img-fluid"
                     alt="Drinks & Wine"
                   />
@@ -630,7 +624,7 @@
               <div class="service-2__item mb-24">
                 <div class="service-2__item-media">
                   <img
-                    src="./assets/imgs/service-2/service-4.png"
+                    src="./assets/imgs/service-2/s4.png"
                     class="img-fluid"
                     alt="Fresh Foods"
                   />
@@ -664,10 +658,13 @@
                   <div
                     class="section__title-wrapper text-center text-xxl-start mb-45"
                   >
-                    <span
-                      class="section__subtitle justify-content-start mb-20 mb-xs-5 wow clip-a-z"
-                      >make reservation</span
-                    >
+                    <button
+  id="make-reservation1"
+  class="section__subtitle justify-content-center mb-10 mb-xs-5 wow clip-a-z"
+  style="border: none; background-color: var(--rr-theme-primary); color: #fff; padding: 10px 20px; border-radius: 5px; cursor: pointer;"
+>
+  Make Reservation
+</button>
                     <h2
                       class="section__title section__title-line-height-50 mb-30 title-animation"
                     >
@@ -725,7 +722,7 @@
       <!-- reservation area end -->
 
           <!-- reservation-2 start -->
-      <section class="reservation-2 section-space section-bg-2 overflow-hidden">
+      <section class="reservation-2 section-space section-bg-2 overflow-hidden " style="background-color:black;">
         <div class="container">
           <div class="reservation-2__shape">
             <img
@@ -745,11 +742,15 @@
               <div
                 class="section__title-wrapper text-center mb-70 mb-sm-50 mb-xs-40"
               >
-                <span
-                  class="section__subtitle justify-content-center mb-10 mb-xs-5 wow clip-a-z"
-                  >make reservation</span
-                >
-                <h2 class="section__title mb-10 mb-xs-5 title-animation">
+                <button
+  id="make-reservation"
+  class="section__subtitle justify-content-center mb-10 mb-xs-5 wow clip-a-z"
+  style="border: none; background-color: var(--rr-theme-primary); color: #fff; padding: 10px 20px; border-radius: 5px; cursor: pointer;"
+>
+  Make Reservation
+</button>
+
+                <h2 class="section__title mb-10 mb-xs-5 title-animation" style="color: #fff;">
                   Discover Our Category
                 </h2>
                 <div class="dot-shpae wow clip-a-z">
@@ -768,7 +769,7 @@
               <div class="reservation-2__item">
                 <div class="reservation-2__item-media">
                   <img
-                    src="./assets/imgs/reservation-2/resized_01.jpg"
+                    src="./assets/imgs/reservation-2/111.png"
                     class="img-fluid"
                     alt="not found"
                   />
@@ -789,7 +790,7 @@
               <div class="reservation-2__item">
                 <div class="reservation-2__item-media">
                   <img
-                    src="./assets/imgs/reservation-2/resized_02.jpg"
+                    src="./assets/imgs/reservation-2/123.png"
                     class="img-fluid"
                     alt="not found"
                   />
@@ -830,7 +831,7 @@
               <div class="reservation-2__item">
                 <div class="reservation-2__item-media">
                   <img
-                    src="./assets/imgs/reservation-2/resized_04.jpg"
+                    src="./assets/imgs/reservation-2/112.jpg"
                     class="img-fluid"
                     alt="not found"
                   />
@@ -849,7 +850,7 @@
               <div class="reservation-2__item">
                 <div class="reservation-2__item-media">
                   <img
-                    src="./assets/imgs/reservation-2/resized_05.webp"
+                    src="./assets/imgs/reservation-2/124.png"
                     class="img-fluid"
                     alt="not found"
                   />
@@ -870,7 +871,7 @@
               <div class="reservation-2__item">
                 <div class="reservation-2__item-media">
                   <img
-                    src="./assets/imgs/reservation-2/resized_06.jpg"
+                    src="./assets/imgs/reservation-2/125.jpg"
                     class="img-fluid"
                     alt="not found"
                   />
@@ -1365,6 +1366,7 @@
       <section
         id="food-menu"
         class="food-menu-tab overflow-hidden section-bg-3 section-space"
+        style="background-color: black; ;"
       >
         <div class="container">
           <div class="food-menu-tab__shape">
@@ -1402,6 +1404,7 @@
                     role="tab"
                     aria-controls="all-food"
                     aria-selected="true"
+                    style="color: white;"
                   >
                     Appetizers
                   </button>
@@ -1414,6 +1417,7 @@
                     role="tab"
                     aria-controls="nav-breakfast"
                     aria-selected="false"
+                    style="color: white;"
                   >
                     Main Course
                   </button>
@@ -1426,6 +1430,7 @@
                     role="tab"
                     aria-controls="nav-lunch"
                     aria-selected="false"
+                    style="color: white;"
                   >
                     Breads , Desserts , Drinks
                   </button>
@@ -1445,7 +1450,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_1.webp"
+                        src="./assets/imgs/food-menu-tab/01_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1473,7 +1478,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_2.webp"
+                        src="./assets/imgs/food-menu-tab/02_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1498,7 +1503,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_3.webp"
+                        src="./assets/imgs/food-menu-tab/03_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1523,7 +1528,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_4.webp"
+                        src="./assets/imgs/food-menu-tab/04_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1551,7 +1556,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_5.webp"
+                        src="./assets/imgs/food-menu-tab/05_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1579,7 +1584,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_6.webp"
+                        src="./assets/imgs/food-menu-tab/06_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1607,7 +1612,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_7.webp"
+                        src="./assets/imgs/food-menu-tab/07_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1635,7 +1640,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_8.webp"
+                        src="./assets/imgs/food-menu-tab/08_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1672,7 +1677,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_1.webp"
+                        src="./assets/imgs/food-menu-tab/11_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1700,7 +1705,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_2.webp"
+                        src="./assets/imgs/food-menu-tab/12_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1728,7 +1733,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_3.webp"
+                        src="./assets/imgs/food-menu-tab/13_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1756,7 +1761,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_4.webp"
+                        src="./assets/imgs/food-menu-tab/14_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1784,7 +1789,7 @@
                       class="food-menu-tab__item-media"
                     >
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_5.webp"
+                        src="./assets/imgs/food-menu-tab/15_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1809,7 +1814,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_6.webp"
+                        src="./assets/imgs/food-menu-tab/16_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1834,7 +1839,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_7.webp"
+                        src="./assets/imgs/food-menu-tab/17_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1859,7 +1864,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_new_8.webp"
+                        src="./assets/imgs/food-menu-tab/18_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1893,7 +1898,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_1.webp"
+                        src="./assets/imgs/food-menu-tab/21_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1918,7 +1923,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_2.webp"
+                        src="./assets/imgs/food-menu-tab/22_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1943,7 +1948,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_3.webp"
+                        src="./assets/imgs/food-menu-tab/23_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1968,7 +1973,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_aloo_paratha_new.webp"
+                        src="./assets/imgs/food-menu-tab/24_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -1993,7 +1998,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_4.webp"
+                        src="./assets/imgs/food-menu-tab/25_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -2018,7 +2023,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_5.webp"
+                        src="./assets/imgs/food-menu-tab/26_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -2043,7 +2048,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_6.webp"
+                        src="./assets/imgs/food-menu-tab/27_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -2068,7 +2073,7 @@
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
                       <img
-                        src="./assets/imgs/food-menu-tab/resized_final_fixed_7.webp"
+                        src="./assets/imgs/food-menu-tab/28_resized.png"
                         class="img-fluid"
                         alt="image not found"
                       />
@@ -2875,6 +2880,8 @@
           document.getElementById("bookatable2"),
           document.getElementById("orderBtnMobile2"),
           document.getElementById("orderBtnMobile1"),
+          document.getElementById("make-reservation"),
+          document.getElementById("make-reservation1"),
         ];
 
         openBtns.forEach(function (btn) {
