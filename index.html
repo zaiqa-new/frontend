@@ -1364,141 +1364,85 @@
 
       <!--  food-menu-tab start-->
       <section
-        id="food-menu"
-        class="food-menu-tab overflow-hidden section-bg-3 section-space"
-        style="background-color: black; ;"
-      >
-        <div class="container">
-          <div class="food-menu-tab__shape">
-            <img
-              class="shape-1 rightLeft"
-              src="./assets/imgs/food-menu-tab/shape-1.png"
-              alt="not found"
-            />
-            <img
-              class="shape-2 leftRight"
-              src="./assets/imgs/food-menu-tab/shape-3.png"
-              alt="not found"
-            />
-            <img
-              class="shape-3 zooming1"
-              src="./assets/imgs/food-menu-tab/shape-2.png"
-              alt="not found"
-            />
-            <img
-              class="shape-4 upDown"
-              src="./assets/imgs/food-menu-tab/shape-4.png"
-              alt="not found"
-            />
-          </div>
-          <div class="row g-24">
-            <div class="col-12">
-              <div class="food-menu-tab__nav-tabs">
-                <nav class="nav" id="nav-tab" role="tablist">
-                  <button
-                    class="nav-link active"
-                    id="all-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#all-food"
-                    type="button"
-                    role="tab"
-                    aria-controls="all-food"
-                    aria-selected="true"
-                    style="color: white;"
-                  >
-                    Appetizers
-                  </button>
-                  <button
-                    class="nav-link"
-                    id="nav-breakfast-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-breakfast"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-breakfast"
-                    aria-selected="false"
-                    style="color: white;"
-                  >
-                    Main Course
-                  </button>
-                  <button
-                    class="nav-link"
-                    id="nav-lunch-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-lunch"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-lunch"
-                    aria-selected="false"
-                    style="color: white;"
-                  >
-                    Breads , Desserts , Drinks
-                  </button>
-                </nav>
+  id="food-menu"
+  class="food-menu-tab overflow-hidden section-bg-3 section-space"
+  style="background-color: black;"
+>
+  <div class="container" style="max-width:1100px; margin:0 auto;">
+    <div class="food-menu-tab__shape">
+      <img class="shape-1 rightLeft" src="./assets/imgs/food-menu-tab/shape-1.png" alt="not found" />
+      <img class="shape-2 leftRight" src="./assets/imgs/food-menu-tab/shape-3.png" alt="not found" />
+      <img class="shape-3 zooming1" src="./assets/imgs/food-menu-tab/shape-2.png" alt="not found" />
+      <img class="shape-4 upDown" src="./assets/imgs/food-menu-tab/shape-4.png" alt="not found" />
+    </div>
+
+    <div class="row g-24">
+      <div class="col-12">
+        <div class="food-menu-tab__nav-tabs">
+          <nav class="nav" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-food"
+              type="button" role="tab" aria-controls="all-food" aria-selected="true" style="color: white;">
+              Appetizers
+            </button>
+            <button class="nav-link" id="nav-breakfast-tab" data-bs-toggle="tab" data-bs-target="#nav-breakfast"
+              type="button" role="tab" aria-controls="nav-breakfast" aria-selected="false" style="color: white;">
+              Main Course
+            </button>
+            <button class="nav-link" id="nav-lunch-tab" data-bs-toggle="tab" data-bs-target="#nav-lunch"
+              type="button" role="tab" aria-controls="nav-lunch" aria-selected="false" style="color: white;">
+              Breads , Desserts , Drinks
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="nav-tabContent">
+      <!-- Appetizers -->
+      <div class="tab-pane fade show active" id="all-food" role="tabpanel" aria-labelledby="all-tab">
+        <div class="row g-24 mb-minus-24">
+          
+          <div class="col-xl-3 col-md-4 col-sm-6">
+            <div class="food-menu-tab__item mb-24">
+              <a href="#" class="food-menu-tab__item-media">
+                <img src="./assets/imgs/food-menu-tab/01_resized.png" class="img-fluid" alt="image not found"
+                  style="height:220px; width:100%; object-fit:cover; " />
+              </a>
+              <div class="food-menu-tab__item-text">
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <h6 class="food-menu-tab__item-text-title"><a href="#">Aloo Tikki Chaat</a></h6>
+                <span class="price">$11.00</span>
               </div>
             </div>
           </div>
-          <div class="tab-content" id="nav-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="all-food"
-              role="tabpanel"
-              aria-labelledby="all-tab"
-            >
-              <div class="row g-24 mb-minus-24">
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                  <div class="food-menu-tab__item mb-24">
-                    <a href="#" class="food-menu-tab__item-media">
-                      <img
-                        src="./assets/imgs/food-menu-tab/01_resized.png"
-                        class="img-fluid"
-                        alt="image not found"
-                      />
-                    </a>
-                    <div class="food-menu-tab__item-text">
-                      <ul class="rating">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h6 class="food-menu-tab__item-text-title">
-                        <a href="#">Aloo Tikki Chaat</a>
-                      </h6>
-                      <span class="price">$11.00</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                  <div class="food-menu-tab__item mb-24">
-                    <a
-                      href="#"
-                      class="food-menu-tab__item-media"
-                    >
-                      <img
-                        src="./assets/imgs/food-menu-tab/02_resized.png"
-                        class="img-fluid"
-                        alt="image not found"
-                      />
-                    </a>
-                    <div class="food-menu-tab__item-text">
-                      <ul class="rating">
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <h6 class="food-menu-tab__item-text-title">
-                        <a href="#">Chicken 65</a>
-                      </h6>
-                      <span class="price">$15.00</span>
-                    </div>
-                  </div>
-                </div>
+
+          <div class="col-xl-3 col-md-4 col-sm-6">
+            <div class="food-menu-tab__item mb-24">
+              <a href="#" class="food-menu-tab__item-media">
+                <img src="./assets/imgs/food-menu-tab/02_resized.png" class="img-fluid" alt="image not found"
+                  style="height:220px; width:100%; object-fit:cover;" />
+              </a>
+              <div class="food-menu-tab__item-text">
+                <ul class="rating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <h6 class="food-menu-tab__item-text-title"><a href="#">Chicken 65</a></h6>
+                <span class="price">$15.00</span>
+              </div>
+            </div>
+          </div>
                 <div class="col-xl-3 col-md-4 col-sm-6">
                   <div class="food-menu-tab__item mb-24">
                     <a href="#" class="food-menu-tab__item-media">
@@ -1506,6 +1450,7 @@
                         src="./assets/imgs/food-menu-tab/03_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1531,6 +1476,7 @@
                         src="./assets/imgs/food-menu-tab/04_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1559,6 +1505,7 @@
                         src="./assets/imgs/food-menu-tab/05_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1587,6 +1534,7 @@
                         src="./assets/imgs/food-menu-tab/06_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1615,6 +1563,7 @@
                         src="./assets/imgs/food-menu-tab/07_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1643,6 +1592,7 @@
                         src="./assets/imgs/food-menu-tab/08_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1680,6 +1630,7 @@
                         src="./assets/imgs/food-menu-tab/11_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1708,6 +1659,7 @@
                         src="./assets/imgs/food-menu-tab/12_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1736,6 +1688,7 @@
                         src="./assets/imgs/food-menu-tab/13_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1764,6 +1717,7 @@
                         src="./assets/imgs/food-menu-tab/14_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1792,6 +1746,7 @@
                         src="./assets/imgs/food-menu-tab/15_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1817,6 +1772,7 @@
                         src="./assets/imgs/food-menu-tab/16_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1842,6 +1798,7 @@
                         src="./assets/imgs/food-menu-tab/17_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1867,6 +1824,7 @@
                         src="./assets/imgs/food-menu-tab/18_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1901,6 +1859,7 @@
                         src="./assets/imgs/food-menu-tab/21_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1926,6 +1885,7 @@
                         src="./assets/imgs/food-menu-tab/22_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1951,6 +1911,7 @@
                         src="./assets/imgs/food-menu-tab/23_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -1976,6 +1937,7 @@
                         src="./assets/imgs/food-menu-tab/24_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -2001,6 +1963,7 @@
                         src="./assets/imgs/food-menu-tab/25_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -2026,6 +1989,7 @@
                         src="./assets/imgs/food-menu-tab/26_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -2051,6 +2015,7 @@
                         src="./assets/imgs/food-menu-tab/27_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;" 
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
@@ -2076,6 +2041,7 @@
                         src="./assets/imgs/food-menu-tab/28_resized.png"
                         class="img-fluid"
                         alt="image not found"
+                        style="height:220px; width:100%; object-fit:cover;"  
                       />
                     </a>
                     <div class="food-menu-tab__item-text">
